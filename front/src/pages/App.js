@@ -22,6 +22,7 @@ class App extends React.Component {
 	render() {
 		const links = this.state.articleList.map((value) => {
 			return (
+				// add a unique for li
 				<li>
 					<a href={"/articles/" + value.id}>{value.name}</a>
 				</li>
